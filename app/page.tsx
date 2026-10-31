@@ -1,11 +1,17 @@
 const logoUrl =
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Firefly_RemoveBackground-pQC0SBjZWXvvEx1Q5I7X8rHwQl1zW5.png'
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Firefly_RemoveBackground-pQC0SBjZWXvvEx1Q5I7X8rHwQl1zW5.png";
 
 export default function Page() {
   return (
     <main className="construction-page">
-      <div className="construction-orbit construction-orbit-one" aria-hidden="true" />
-      <div className="construction-orbit construction-orbit-two" aria-hidden="true" />
+      <div
+        className="construction-orbit construction-orbit-one"
+        aria-hidden="true"
+      />
+      <div
+        className="construction-orbit construction-orbit-two"
+        aria-hidden="true"
+      />
 
       <section className="construction-card" aria-labelledby="page-title">
         <div className="brand-mark">
@@ -25,6 +31,5 @@ export default function Page() {
         <p className="footer-note">PT. Kamardikan Niaga Nusantara</p>
       </section>
     </main>
-  )
+  );
 }
-
