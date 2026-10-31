@@ -3,8 +3,10 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ptknn.com"),
   title: "Under Construction | PT. Kamardikan Niaga Nusantara",
   description: "PT. Kamardikan Niaga Nusantara website coming soon.",
+
   icons: {
     icon: [
       {
@@ -22,6 +24,28 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
+
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    url: "https://ptknn.com/",
+    siteName: "PT. Kamardikan Niaga Nusantara",
+    title: "PT. Kamardikan Niaga Nusantara",
+    description: "PT. Kamardikan Niaga Nusantara website coming soon.",
+    images: [
+      {
+        url: "/knn_logo.png",
+        alt: "PT. Kamardikan Niaga Nusantara",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PT. Kamardikan Niaga Nusantara",
+    description: "PT. Kamardikan Niaga Nusantara website coming soon.",
+    images: ["/knn_logo.png"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -38,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
